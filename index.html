@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>The Band</title>
+<title>Apdailos Imperija Website</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-<body>
 
+<body>
+<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar w3-black">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#members" class="w3-bar-item w3-button">Members</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
 <!-- Start Content -->
 <div id="home" class="w3-content">
-
-<!-- Slides -->
-<img class="slides" src="img_la.jpg" width="100%">
-<img class="slides" src="img_ny.jpg" width="100%">
-<img class="slides" src="img_ch.jpg" width="100%">
-<script>
-w3.slideshow(".slides", 1500);
-</script>
-
-<!-- End Content -->
+    <!-- End Content -->
 </div>
 
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="diningroom.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="bedroom.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="livingroom2.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <script src="myscript.js"></script>
 </body>
 </html>
