@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(8, 60, 138);
     color: aliceblue;
 }
 /* pasted style -------------------------------- */
@@ -13,6 +13,10 @@ img {vertical-align: middle;}
 .slideshow-container {
   position: relative;
   margin: auto;
+}
+.transparent{
+ opacity: 0.2;
+ background-image:inherit;
 }
 
 /* Caption text */
