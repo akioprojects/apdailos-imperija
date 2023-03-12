@@ -3,26 +3,19 @@
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <title>Apdailos Imperija Website</title>
+<head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="w3schools.css">
 <link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script src="https://kit.fontawesome.com/c7f81cad05.js" crossorigin="anonymous"></script>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-<body>
-  <style>
-    body,h1 {font-family: "Raleway", sans-serif}
-    body, html {height: 100%}
-    .bgimg {
-      background-image: url('atrium2.png');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-    </style>
-    </head>
+</head>
     <body>
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <div class="w3-display-topmiddle w3-padding-large w3-xlarge">
+    <!-- info-bar with background pic -->
+    <div class="bgimg1 w3-display-container w3-animate-opacity w3-text-white">
+  <!-- Top menu on large screens -->
+  <div class="w3-display-topmiddle w3-padding-large w3-xlarge w3-hide-small w3-hide-medium">
         <div class="w3-bar">
           <p class="w3-bar-item"><i class="fa-regular fa-clock"></i> Pir – Pen: 8:00 – 20:00</p>
           <p class="w3-bar-item"><i class="fa-solid fa-mobile-screen-button"></i> +37060060204</p>
@@ -30,7 +23,7 @@
          </div> 
         <div class="w3-bar">
           <a href="#" class="w3-bar-item w3-button">Pagrindinis</a>
-          <a href="#" class="w3-bar-item w3-button">Apie mus</a>
+          <a href="#about" class="w3-bar-item w3-button">Apie mus</a>
           <div class="w3-dropdown-hover">
             <button class="w3-button">Apdailos Darbai</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -48,10 +41,130 @@
                 <a href="#" style="border:5px solid white" class="w3-bar-item w3-button w3-hover-none w3-hover-border-blue">Plytelių klijavimas</a>
             </div>
         </div>
-        <a href="#" class="w3-bar-item w3-button">Galerija</a>
+        <a href="#gallery" class="w3-bar-item w3-button">Galerija</a>
       </div>
     </div>
-
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Patikėkite savo idėja profesionalams</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small transparent"><b>Apdailos Imperija</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">Sužinoti daugiau</button></h6>
+    </div>
+  </div>
+  <!-- End of toolbar -->
+  <!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white transparent  w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Apdailos Imperija</span>
+  <a href="javascript:void(0)" class="w3-right w3-button" onclick="w3_open()">☰</a>
+  
+</header>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Apdailos<br>Imperija</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Pradžia</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Apie mus</a> 
+  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">Galerija</a>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"
+ style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- End of small top menu -->
+  <!-- Page content start -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+    <!-- Project/Gallery Section -->
+    <div class="w3-container w3-padding-32" id="gallery">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Galerija(projectai?)</h3>
+    </div>
+  
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Modernus Ažuolo laiptai</div>
+          <img src="int1.png" alt="Modernus Ažuolo laiptai" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Stebuklingos sienos</div>
+          <img src="int2.png" alt="Stebuklingos sienos" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Tiesiog laptai</div>
+          <img src="int3.png" alt="Tiesiog laptai" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+          <img src="int4.png" alt="House" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+          <img src="int5.png" alt="House" style="width:99%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+          <img src="int6.png" alt="House" style="width:99%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+          <img src="int7.png" alt="House" style="width:99%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+          <img src="int8.png" alt="House" style="width:99%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        </div>
+      </div>
+    </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Apie mus</h3>
+      <p>PATIRTIS IR PASIEKIAMUMAS
+        Atsakingi ir patyrę meistrai su daugiau nei 12 metų atlieka namo vidaus
+          apdailos ir inžinerinių tinklų darbus. Dirbame Kaune, Vilniuje ir 
+          aplinkiniuose rajonuose. Pagrindinis mūsų tikslas  – pilnai patenkinti
+           mūsų klientų poreikius ir išpildyti, net iš pirmo žvilgsnio, kartais
+          nerealius pageidavimus.        
+      </p>
+    </div>
+  
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="zenia.jpg" alt="John" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <h3>Jevgenij Lapickij</h3>
+        <p class="w3-opacity">Vadovas</p>
+        <p>Visu galu meistras a.k.a. "Auksinės rankos".</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+    </div>
+  <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>© 2023 Apdailos Imperija Vilnius. Visos teisės saugomos</p>
+  <p id="akioprojects">Made by AKIO PROJECTS <a href="https://github.com/akioprojects/apdailos-imperija" title="W3.CSS" target="_blank" class="w3-hover-text-green">GitHub</a></p>
+</footer>
 <script src="myscript.js"></script>
 </body>
 </html>
